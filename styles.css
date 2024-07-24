@@ -2,8 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
 
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,51 +11,52 @@
     list-style: none;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
 /* HEADER */
 
-header{
+header {
     position: fixed;
     width: 100%;
-    top:0;
+    top: 0;
     right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 90px;   
-    z-index: 1000; 
+    padding: 10px 90px;
+    z-index: 1000;
     background-color: rgb(0, 0, 0);
 }
 
-.logo{
+.logo {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
 }
 
-.logo img{
+.logo img {
     width: 50px;
     height: 50px;
 }
 
-.menu-icon{
+.menu-icon {
     font-size: 24px;
     z-index: 10001;
     cursor: pointer;
     display: none;
+    color: whitesmoke;
 }
 
 /* NAV-BAR */
 
-.nav-bar{
+.nav-bar {
     display: flex;
 }
 
-.nav-bar a{
+.nav-bar a {
     padding: 5px 17px;
     font-size: 1rem;
     text-transform: uppercase;
@@ -66,35 +66,35 @@ header{
     color: whitesmoke;
 }
 
-.nav-bar a:hover{
+.nav-bar a:hover {
     color: rgb(4, 48, 66);
     background-color: rgb(255, 255, 255);
     border-radius: 50px;
 }
 
-section{
+section {
     padding: 80px 100px;
     transform: translateX(400%);
     transition: transform 1.5s ease-in-out;
 }
 
-section:nth-of-type(odd){
+section:nth-of-type(odd) {
     transform: translateX(-400%);
 }
 
-section:nth-of-type(even){
+section:nth-of-type(even) {
     transform: translateX(-400%);
 }
 
-section.show{
+section.show {
     transform: translateX(0);
 }
 
 /* animation */
 
-/* HOME  SECTION */
+/* HOME SECTION */
 
-.home{
+.home {
     width: 100%;
     min-height: 100vh;
     background-image: url(images/bgimg.jpg);
@@ -108,12 +108,12 @@ section.show{
     overflow: clip;
 }
 
-.home-text{
+.home-text {
     max-width: 750px;
     padding: 10px 10px;
 }
 
-.home-text h1{
+.home-text h1 {
     position: absolute;
     font-size: 50px;
     letter-spacing: 3px;
@@ -123,15 +123,15 @@ section.show{
     font-family: "Rancho", cursive;
 }
 
-.home-text h3{
-    position:absolute;
+.home-text h3 {
+    position: absolute;
     font-size: 30px;
     margin-top: 65px;
     color: rgba(150, 138, 229, 0.9);
     font-weight: 400;
 }
 
-.home-text p{
+.home-text p {
     font-size: 17px;
     color: white;
     margin-top: 115px;
@@ -139,15 +139,15 @@ section.show{
     word-spacing: 3px;
 }
 
-.home-text .btn{
+.home-text .btn {
     margin-top: 25px;
 }
 
-.home-text .btn .resume{
+.home-text .btn .resume {
     margin-right: 20px;
 }
 
-.home-text .btn a{
+.home-text .btn a {
     height: 100%;
     background: rgb(180, 219, 243);
     border: 2px solid lightskyblue;
@@ -161,23 +161,22 @@ section.show{
     transition: all;
 }
 
-.home-text .btn a:hover{
+.home-text .btn a:hover {
     background-color: black;
     color: white;
     transition: ease-in 0.4s;
 }
 
+/* ABOUT SECTION */
 
-/* ABOUT  SECTION */
-
-.about{
+.about {
     display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(200px , auto));
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     align-items: center;
     gap: 30px;
 }
 
-.about .about-text h1{
+.about .about-text h1 {
     font-family: "Rancho", cursive;
     font-size: 40px;
     text-align: center;
@@ -185,7 +184,7 @@ section.show{
     letter-spacing: 3px;
 }
 
-.about .about-text p{
+.about .about-text p {
     letter-spacing: 1px;
     line-height: 1.6;
     inset-inline: 10px 50px;
@@ -194,17 +193,16 @@ section.show{
     text-align: center;
 }
 
-.about .about-img img{
+.about .about-img img {
     border: 1px solid black;
     border-radius: 10px;
     height: 75%;
     width: 80%;
 }
 
+/* SKILLS SECTION */
 
-/* SKILLS  SECTION */
-
-.skills .skills-text h1{
+.skills .skills-text h1 {
     font-family: "Rancho", cursive;
     font-size: 40px;
     text-align: center;
@@ -212,7 +210,7 @@ section.show{
     letter-spacing: 3px;
 }
 
-.skills .skills-text p{
+.skills .skills-text p {
     letter-spacing: 1px;
     line-height: 1.6;
     inset-inline: 10px 50px;
@@ -221,15 +219,15 @@ section.show{
     text-align: center;
 }
 
-.skills .skills-container{
+.skills .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(300px , auto));
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     gap: 1.5rem;
     margin-top: 2rem;
-    cursor: pointer;;
+    cursor: pointer;
 }
 
-.skills-container .skill{
+.skills-container .skill {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -240,12 +238,12 @@ section.show{
     transition: all ease .2s;
 }
 
-.skills-container .skill:hover{
+.skills-container .skill:hover {
     box-shadow: 5px 5px 15px 5px rgba(13, 36, 36, 0.15);
-    transform:scale(1.1);
+    transform: scale(1.1);
 }
 
-.skills-container .skill img{
+.skills-container .skill img {
     width: 100%;
     height: 250px;
     object-fit: contain;
@@ -256,7 +254,7 @@ section.show{
     vertical-align: top;
 }
 
-.skills-container .skill .skill-content{
+.skills-container .skill .skill-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -267,13 +265,13 @@ section.show{
 
 /* PROJECTS SECTION */
 
-.projects .projects-text{
+.projects .projects-text {
     display: flex;
     align-items: center;
     gap: 100px;
 }
 
-.projects h1{
+.projects h1 {
     font-family: "Rancho", cursive;
     font-size: 40px;
     text-align: center;
@@ -281,7 +279,7 @@ section.show{
     letter-spacing: 3px;
 }
 
-.projects .projects-text p{
+.projects .projects-text p {
     letter-spacing: 1px;
     line-height: 1.6;
     inset-inline: 10px 50px;
@@ -292,15 +290,14 @@ section.show{
 
 /* FOOTER SECTION */
 
-.footer{
-    color:black;
+.footer {
+    color: black;
     padding: 0 100px;
     overflow: auto;
     background-color: rgba(185, 167, 167, 0.5);
-
 }
 
-.footer h1{
+.footer h1 {
     font-family: "Rancho", cursive;
     font-size: 40px;
     text-align: center;
@@ -308,40 +305,40 @@ section.show{
     letter-spacing: 3px;
 }
 
-.contact{
+.contact {
     display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(200px , auto));
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     padding: 5px;
 }
 
-.contact p{
+.contact p {
     padding: 5px;
 }
 
-.details{
+.details {
     display: flex;
     flex-direction: column;
     row-gap: 0.5rem;
     padding: 5px 20px;
 }
 
-.details span{
+.details span {
     display: flex;
     align-items: center;
 }
 
-.details a{
+.details a {
     color: black;
     text-decoration: none;
     font-size: 16px;
 }
 
-.details i{
+.details i {
     font-size: 20px;
     margin-right: 1rem;
 }
 
-.social{
+.social {
     display: flex;
     flex-direction: column;
     row-gap: 0.5rem;
@@ -349,26 +346,199 @@ section.show{
     color: whitesmoke;
 }
 
-.social span{
+.social span {
     display: flex;
     align-items: center;
 }
 
-.social a{
-    color:black;
+.social a {
+    color: black;
     text-decoration: none;
     font-size: 16px;
 }
 
-.social i{
-    font-size: 15px;
+.social i {
+    font-size: 20px;
     margin-right: 1rem;
 }
 
-.copyright{
-    padding: 20px;
-    text-align: center;
-    background-color: rgb(223, 205, 183);
+.text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    padding: 5px 20px;
 }
 
+.text p {
+    font-size: 14px;
+}
 
+.hr {
+    margin: 1rem 0;
+}
+
+@keyframes right {
+    0% {
+        opacity: 0;
+        transform: translateX(150px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes left {
+    0% {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 991px) {
+    header {
+        padding: 10px 50px;
+    }
+
+    .nav-bar {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        right: -100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        background: black;
+        transition: .5s;
+    }
+
+    .nav-bar a {
+        padding: 10px 30px;
+        margin: 40px 0;
+        font-size: 25px;
+    }
+
+    .nav-bar a:hover {
+        background-color: black;
+        color: white;
+        transition: ease-in 0.4s;
+    }
+
+    .nav-bar.show {
+        right: 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    section {
+        padding: 60px 50px;
+    }
+
+    .home {
+        padding: 100px 0 60px 0;
+    }
+
+    .about,
+    .skills,
+    .projects,
+    .footer {
+        padding: 50px 50px;
+    }
+
+    .about .about-text p,
+    .skills .skills-text p,
+    .projects .projects-text p {
+        inset-inline: 10px 30px;
+    }
+
+    .footer {
+        padding: 50px 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-text h1 {
+        font-size: 40px;
+    }
+
+    .home-text h3 {
+        font-size: 25px;
+    }
+
+    .home-text p {
+        font-size: 15px;
+    }
+
+    .home-text .btn a {
+        font-size: 17px;
+    }
+
+    .about .about-text h1,
+    .skills .skills-text h1,
+    .projects h1,
+    .footer h1 {
+        font-size: 35px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about .about-text p,
+    .skills .skills-text p,
+    .projects .projects-text p {
+        inset-inline: 10px 20px;
+    }
+
+    .projects .projects-text {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .home-text h1 {
+        font-size: 30px;
+    }
+
+    .home-text h3 {
+        font-size: 20px;
+    }
+
+    .home-text p {
+        font-size: 13px;
+    }
+
+    .home-text .btn a {
+        font-size: 15px;
+    }
+
+    .about .about-text h1,
+    .skills .skills-text h1,
+    .projects h1,
+    .footer h1 {
+        font-size: 30px;
+    }
+
+    .about .about-text p,
+    .skills .skills-text p,
+    .projects .projects-text p {
+        inset-inline: 10px;
+    }
+}
